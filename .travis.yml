@@ -3,7 +3,7 @@ language: python
 
 # Далее, укажите версии python для которых нужно производить сборки
 python:
-  - "2.6"
+  
   - "2.7"
 
 # Параметры окружения
@@ -13,7 +13,7 @@ env:
 # Команда для установки зависимостей в окружение (при этом доступны переменные из секции "env")
 install:
   - pip install -q Django==$DJANGO_VERSION
-  - pip install -r requirements.txt --use-mirrors
+  
 
 # Команда для запуска тестов, в моем случае они запускаются именно так
 script: python multi_sessions/tests.py
