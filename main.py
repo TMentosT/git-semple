@@ -9,6 +9,11 @@ def read_the_file(dir_path):
                 convert(line[index:])
 
 
+def convert(line):
+    nums = ''.join(filter(str.isdigit, line))
+    nums = nums[1:11]
+ 
+
 def main():
     dir_path = str(input("Введите полный путь до файла и название файла:\n"))
     try:
