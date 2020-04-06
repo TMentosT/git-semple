@@ -12,7 +12,8 @@ def read_the_file(dir_path):
 def convert(line):
     nums = ''.join(filter(str.isdigit, line))
     nums = nums[1:11]
- 
+    result = "+1 ({}{}{}) {}{}{}{}{}{}{}".format(*nums)
+    print(result)
 
 def main():
     dir_path = str(input("Введите полный путь до файла и название файла:\n"))
