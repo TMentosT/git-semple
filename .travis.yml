@@ -3,8 +3,11 @@ python:
  
   - "3.4"
   - "3.5"
- 
+
+install: 
+ - pip coveralls
+
 script: 
   - python main.py < test.txt
   
-after_success: — coveralls
+after_success:  coveralls
