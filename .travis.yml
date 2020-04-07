@@ -8,4 +8,5 @@ python:
 script: 
   - python main.py < test.txt
   
-after_success:  coveralls
+after_success:  
+- coveralls
