@@ -1,6 +1,9 @@
 language: python
-
-# Далее, укажите версии python для которых нужно производить сборки
 python:
-  - "3.7"
  
+  - "3.7"
+cache: pip
+install:
+  - pip install -r requirements.txt
+script:
+  - py.test --cov-report term-missing --cov app -v
