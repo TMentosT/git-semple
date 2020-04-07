@@ -8,4 +8,4 @@ script:
   - python main.py < test.txt
   
   "sbt clean coverage test"
-after_success: "sbt coverageReport coveralls"
+after_success: "sbt  coveralls"
