@@ -4,20 +4,6 @@ python:
   - "3.5"
 script: 
   - python main.py < test.txt
-  addons:
-  sonarcloud:
-    organization: "xelian-github"
-    token:
-      secure: ${SONAR_TOKEN}
-    branches:
-      - master
-script:
-  # other script steps might be done before running the actual analysis
-  - sonar-scanner
-
-  
-  
-  
   
   
 after_success:  
