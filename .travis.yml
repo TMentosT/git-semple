@@ -3,7 +3,7 @@ python:
   - "3.4"
   - "3.5"
 script: 
-  - python main.py < test.txt
+  - python main.py 
   
   
 after_success:  
